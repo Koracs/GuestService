@@ -1,6 +1,7 @@
 import Link from "next/link";
 
-export function Booking({id, room, name, fromDate, toDate}) {
+export async function Booking({id, room, name, fromDate, toDate}) {
+
     return (
             <div className={"BookingButton"}>
                 <p>Room {room}<br/>{name}&nbsp;&nbsp;</p>

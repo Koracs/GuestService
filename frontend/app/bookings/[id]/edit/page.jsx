@@ -1,5 +1,7 @@
 import prisma from '../../../db'
 import Link from "next/link";
+import isAdmin from "../../../isadmin";
+import {redirect} from "next/navigation";
 
 async function editBooking() {
     "use server"
@@ -7,9 +9,13 @@ async function editBooking() {
     //todo multiple server actions from one form? (edit and delete)
 }
 
-export default async function NewPage({params}) {
-    console.log("JSON.stringify(params)")
-    console.log(JSON.stringify(params))
+export default async function EditPage({params}) {
+    const admin = await isAdmin();
+
+    if (!admin) {
+        redirect("/")
+    }
+
     const booking = await prisma.booking.findUnique({where: {id: parseInt(params?.id)}});
 
     return (

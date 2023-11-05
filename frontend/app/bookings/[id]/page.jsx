@@ -1,8 +1,10 @@
 import prisma from '../../db'
 import Link from "next/link";
+import isAdmin from "../../isadmin";
 
 export default async function NewPage({params}) {
     const booking = await prisma.booking.findUnique({where: {id: parseInt(params?.id)}});
+    const admin = await isAdmin();
 
     return (
         <>
@@ -18,7 +20,7 @@ export default async function NewPage({params}) {
 
             <br/>
             <br/>
-            <Link href={`/bookings/${params?.id}/edit`}>Edit</Link>
+            {admin? <Link href={`/bookings/${params?.id}/edit`}>Edit</Link> : <></>}
         </>
     )
 }
