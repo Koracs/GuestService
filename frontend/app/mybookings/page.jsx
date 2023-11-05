@@ -15,12 +15,14 @@ export default async function MyBookingsPage() {
 
     return (
         <>
-            <h1>Bookings</h1>
-            <ul>
+            <h1>My Bookings</h1>
+            <div className={"BookingOverview"}>
                 {bookings.map(booking => (
                     <Booking key={booking.id} {...booking}/>
                 ))}
-            </ul>
+            </div>
+            <br/>
+            <br/>
             <Link href="/new" className={"button"}>New Booking</Link>
         </>
     )
