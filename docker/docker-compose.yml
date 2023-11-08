@@ -20,7 +20,7 @@ services:
       container_name: pgadmin4-guestservice
       image: dpage/pgadmin4
       environment:
-        PGADMIN_DEFAULT_EMAIL: k12043299@students.jku.at
+        PGADMIN_DEFAULT_EMAIL: k12345689@students.jku.at
         PGADMIN_DEFAULT_PASSWORD: password
       ports:
         - 5050:80
