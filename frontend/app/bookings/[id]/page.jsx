@@ -20,7 +20,7 @@ export default async function NewPage({params}) {
 
             <br/>
             <br/>
-            {admin? <Link href={`/bookings/${params?.id}/edit`}>Edit</Link> : <></>}
+            {admin? <Link href={`/bookings/${params?.id}/edit`} className={"button"}>Edit</Link> : <></>}
         </>
     )
 }

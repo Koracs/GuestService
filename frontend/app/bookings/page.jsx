@@ -20,7 +20,7 @@ export default async function BookingsPage() {
 
     return (
         <>
-            <h1>Bookings</h1>
+            <h1>All Bookings</h1>
             <div className={"BookingOverview"}>
                 {bookings.map(booking => (
                     <Booking key={booking.id} {...booking}/>

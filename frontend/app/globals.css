@@ -104,6 +104,7 @@ h1 {
     padding: 14px 25px;
     text-align: center;
     display: inline-block;
+    border: none;
 }
 
 .button:hover {

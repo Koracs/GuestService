@@ -70,8 +70,10 @@ export default async function EditPage({params}) {
                 <label htmlFor="toDate">  Before: {booking?.toDate?.toLocaleDateString()}</label>
                 <br/>
                 <br/>
-                <button type="submit" name="update_button" value="update">Submit</button>
-                <button type="submit" name="delete_button" value="delete">Delete</button>
+                <button type="submit" name="update_button" value="update" className={"button"}>Submit</button>
+                <br/>
+                <br/>
+                <button type="submit" name="delete_button" value="delete" className={"button"}>Delete</button>
             </form>
         </>
     )
