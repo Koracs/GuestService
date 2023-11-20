@@ -145,5 +145,15 @@ h1 {
     transition: var(--transition);
 }
 
+input {
+    width: 30%;
+    padding: 6px 6px;
+    margin: 4px 10px;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
 
 

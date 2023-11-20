@@ -37,7 +37,7 @@ export default function NewPage() {
                 <input type="date" id="toDate" name="toDate" required={true}/>
                 <br/>
                 <br/>
-                <button type="submit">Submit</button>
+                <button className={"button"} type="submit">Submit</button>
             </form>
         </>
     )

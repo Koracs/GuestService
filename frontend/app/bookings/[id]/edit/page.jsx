@@ -55,18 +55,22 @@ export default async function EditPage({params}) {
                 <br/>
                 <label htmlFor="room">Room</label>
                 <input type="number" id="room" name="room"/>
+                <br/>
                 <label htmlFor="room">  Before: {booking?.room}</label>
                 <br/>
                 <label htmlFor="name">Name</label>
                 <input type="text" id="name" name="name"/>
+                <br/>
                 <label htmlFor="name">  Before: {booking?.name}</label>
                 <br/>
                 <label htmlFor="fromDate">From Date</label>
                 <input type="date" id="fromDate" name="fromDate"/>
+                <br/>
                 <label htmlFor="fromDate">  Before: {booking?.fromDate?.toLocaleDateString()}</label>
                 <br/>
                 <label htmlFor="toDate">To Date</label>
                 <input type="date" id="toDate" name="toDate"/>
+                <br/>
                 <label htmlFor="toDate">  Before: {booking?.toDate?.toLocaleDateString()}</label>
                 <br/>
                 <br/>
