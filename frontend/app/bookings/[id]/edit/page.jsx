@@ -47,12 +47,8 @@ export default async function EditPage({params}) {
 
     return (
         <>
-            <h1>Edit Booking</h1>
+            <h1>Edit Booking {params?.id}</h1>
             <form action={editBooking}>
-                <label htmlFor="id">ID</label>
-                <input type="number" id="id" name="id" value={params?.id} readOnly={true}/>
-                <br/>
-                <br/>
                 <label htmlFor="room">Room</label>
                 <input type="number" id="room" name="room"/>
                 <br/>
